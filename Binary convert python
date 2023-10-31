@@ -1,0 +1,15 @@
+def binaryConvert(n):
+  if n == 0:
+    return 0
+  else:
+    return n % 2 + 10 * binaryConvert(n // 2)
+
+def Binary(n):
+  print(f'{n} in binary is {binaryConvert(n)}')
+  
+Binary(8)
+Binary(32)
+Binary(12)
+Binary(72)
+Binary(53)
+Binary(19)
